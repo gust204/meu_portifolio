@@ -1,6 +1,9 @@
 body {
     width: 1500px;
     height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 header {
@@ -27,7 +30,6 @@ header {
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: left;
-    object-fit: contain;
     padding: 10px;
     width: 50px;
     height: 30px;
@@ -37,15 +39,19 @@ header {
     display: flex;
     align-items: center;
     line-height: normal;
-    white-space: nowrap;
-    text-align: center;
+
+    gap: 10px;
 }
 
-.tit {
-    justify-content: center;
-    align-items: center;
-    margin-left: 420px;
-    padding-left: 100px;
+.btn {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  margin-left: 100px;
 }
 
 .hc {
