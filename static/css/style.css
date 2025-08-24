@@ -4,10 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: 'Helvetica Neue';
 }
 
 header {
     height: 158px;
+    justify-content: space-between;
 }
 
 /* Menu */
@@ -34,13 +36,21 @@ header {
     width: 50px;
     height: 30px;
     margin-top: 20px;
-    word-spacing: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     display: flex;
     align-items: center;
     line-height: normal;
-
     gap: 10px;
+}
+
+nav ul {
+  list-style: none;           /* remove os bullets da lista */
+  display: flex;              /* transforma os <li> em linha */
+  gap: 5px;                  /* espaçamento entre os links */
+  align-items: center;
+  justify-content: center;
+  margin-left: 260px;
 }
 
 .btn {
@@ -55,7 +65,7 @@ header {
 }
 
 .hc {
-    background-color: #f8f8f8;
+    background-color: #e0e0e0;
     padding: 1rem;
     width: 1475px;
     height: 25px;
@@ -76,7 +86,7 @@ header {
     justify-content: flex-start;
     float: left;
     text-align: left;
-    margin-left: 230px;
+    margin-left: 100px;
 }
 
 .buscar input {
@@ -110,12 +120,13 @@ header {
 
 .sub {
     display: block;
-    color: black;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 100px;
     position: absolute;
-    margin-top: 510px;
+    margin-top: 160px;
+    font-size: 22px;
+    max-width: 500px;
 }
 
 .c1 {
@@ -125,12 +136,147 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 100px;
     position: absolute;
-    margin-top: 580px;
+    margin-top: 370px;
+    border-radius: 20px;
 }
 
 /* MAIN */
 
 .fti {
+    font-size: 22px;
+    margin-top: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+}
+
+.cht {
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    justify-content: center;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    color: white;
+}
+
+.cht1 {
+    background-image: url("/static/image/chu1.jpg");
+    background-size: cover;
+    width: 750px;
+    height: 450px;
+    background-repeat: no-repeat;
+    margin-top: -500px;
+}
+
+.cht2 {
+    background-image: url("/static/image/chu2.jpg");
+    background-size: cover;
+    width: 750px;
+    height: 450px;
+    margin-left: 750px;
+    margin-top: -370px;
+    background-repeat: no-repeat;
+}
+
+.linha {
+  border-bottom: 1px solid gray;
+  width: 700px;
+  margin: 20px 0;
+  margin-left: 20px;
+  margin-top: -35px;
+}
+
+.linha2 {
+  border-bottom: 1px solid gray;
+  width: 700px;
+  margin: 20px 0;
+  margin-left: 780px;
+  margin-top: 80px;
+}
+
+.cat {
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;              /* coloca lado a lado */
+    justify-content: center;    /* centraliza no meio da tela */
+    align-items: center;        /* alinha verticalmente */
+    gap: 80px;                  /* espaço entre as imagens */
+    margin-top: 30px;
+}
+
+.container img {
+    height: 500px;              /* altura fixa */
+    object-fit: contain;        /* garante que não deforme */
+    background-size: cover;
+}
+
+.textimg1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -100px;
+    position: relative;
+    max-width: 180px;
+    min-width: 200px;
+    margin-left: 610px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.textimg2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -62px;
+    position: relative;
+    max-width: 200px;
+    min-width: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.textimg3 {
+    background-color: white;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -58px;
+    position: relative;
+    padding: 4px 4px;
+    max-width: 200px;
+    min-width: 100px;
+    margin-left: 1120px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.textimg {
+    display: flex;
+    justify-content: center; 
+    gap: 180px;
+    margin-top: -110px;
+}
+
+.textimg a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;           
+    width: 150px;                   
+    height: 50px;                   
+    background-color: white;      
+    color: black;                            
+    font-size: 18px;
+    border-radius: 8px;   
+    margin-right: 80px;          
 }

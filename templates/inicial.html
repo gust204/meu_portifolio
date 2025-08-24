@@ -17,10 +17,14 @@
         </div>
 
         <div class="hb">
-            <a href="{{ url_for('masc') }}" class="btn">Masculino</a>
-            <a href="{{ url_for('fem') }}" class="btn">Feminino</a>
-            <a href="{{ url_for('lanc') }}" class="btn">Lançamento</a>
-            <a href="{{ url_for('prom') }}" class="btn">Promoção</a>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('masc') }}" class="btn">Masculino</a></li>
+                    <li><a href="{{ url_for('fem') }}" class="btn">Feminino</a></li>
+                    <li><a href="{{ url_for('lanc') }}" class="btn">Lançamento</a></li>
+                    <li><a href="{{ url_for('prom') }}" class="btn">Promoção</a></li>
+                </ul>
+            </nav>
             <div class="buscar">
                 <input type="text" placeholder="Buscar">
                 <div class="perfil">
@@ -34,7 +38,8 @@
         </div>
     </header>
         <div class="sub">
-            <h3>PURA VERSATILIDADE QUE ACOMPANHA SEU RITMO!</h3>
+            <h1>PURA VERSATILIDADE
+             QUE ACOMPANHA SEU RITMO!</h1>
         </div>
         <div class="c1">
             <h3>COMPRE AGORA <i class="	fas fa-arrow-right"> </i></h3>
@@ -42,12 +47,43 @@
         <div class="image">
         </div>
         <main>
+
         <div class="fti">
-            <h1>VIVA O ESTILO</h1>
-            <h3 class="subt">Descubra o tênis que une estilo, conforto e atitude: perfeito para cada passo do seu dia, em qualquer ocasião.</h3>
+            <h1>NA CONTAGEM REGRESSIVA...</h1>
         </div>
 
-    </main>
+        <div class="linha2"></div>
+
+        <div class="cht">
+            <h1>CHUTEIRAS</h1>
+            <h6>NIKE x ADIDAS x PUMA</h6>
+        </div>
+
+        <div class="cht1">
+        </div>
+
+        <div class="cht2">
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="cat">
+            <h1>CATEGORIA</h1>
+        </div>
+
+        <div class="container">
+            <img src="static/image/men.avif" alt="Imagem 1">
+            <img src="static/image/women.avif" alt="Imagem 2">
+            <img src="static/image/esportivo.avif" alt="Imagem 3">
+        </div>
+        
+        <div class="textimg">
+            <h4><a href="{{ url_for('masc') }}" class="btn">Homem</a></h4>
+            <h4><a href="{{ url_for('fem') }}" class="btn">Mulher</a></h4>
+            <h4><a href="{{ url_for('esp') }}" class="btn">Esportivo</a></h4>
+        </div>
+
+        </main>
     
 </body>
 </html>

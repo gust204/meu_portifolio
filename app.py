@@ -22,6 +22,10 @@ def lanc():
 def prom():
     return render_template("prom.html")
 
+@app.route("/esp")
+def esp():
+    return render_template("esp.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

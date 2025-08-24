@@ -1,0 +1,100 @@
+body {
+    width: 1500px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    height: 158px;
+}
+
+/* Menu */
+.ha {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 1475px;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hb {
+    background-image: url("/static/image/logo.png");
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: left;
+    object-fit: contain;
+    padding: 10px;
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+    word-spacing: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+}
+
+.hc {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    width: 1475px;
+    height: 25px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    line-height: normal;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Barra de pesquisa */
+.buscar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: flex-start;
+    float: left;
+    text-align: left;
+    margin-left: 230px;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background-color: #dcdcdc;
+}
+
+/* Ícones do Menu*/
+.perfil {
+    margin-left: 28px;
+    white-space: nowrap;
+    word-spacing: 10px;
+}
+
+/* Fim do Menu */
