@@ -26,6 +26,22 @@ def prom():
 def esp():
     return render_template("esp.html")
 
+@app.route("/nike")
+def nike():
+    return render_template("nike.html")
+
+@app.route("/adidas")
+def adidas():
+    return render_template("adidas.html")
+
+@app.route("/puma")
+def puma():
+    return render_template("puma.html")
+
+@app.route("/mormaii")
+def mormaii():
+    return render_template("mormaii.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

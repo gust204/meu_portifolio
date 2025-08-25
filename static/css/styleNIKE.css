@@ -13,6 +13,7 @@ header {
 }
 
 /* Menu */
+
 .ha {
     background-color: black;
     color: white;
@@ -32,6 +33,7 @@ header {
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: left;
+    background-color: white;
     padding: 10px;
     width: 50px;
     height: 30px;
@@ -109,9 +111,9 @@ nav ul {
 
 .linha6 {
     border-bottom: 1px solid gray;
-    width: 990px;
+    width: 1020px;
     margin: 20px 0;
-    margin-left: 450px;
+    margin-left: 400px;
     margin-top: -1080px;
 }
 
@@ -276,18 +278,6 @@ nav ul {
     color: #000;
 }
 
-.antigo-preco1 {
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 15px;
-}
-
-.desconto1 {
-    color: #007B7F;
-    font-weight: bold;
-    margin-left: 15px;
-}
-
 .estrelas1 {
     color: #000000;
     font-size: 18px;
@@ -324,6 +314,18 @@ nav ul {
     color: #000;
 }
 
+.antigo-preco1 {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 15px;
+}
+
+.desconto1 {
+    color: #007B7F;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
 .estrelas2 {
     color: #000000;
     font-size: 18px;
@@ -358,6 +360,18 @@ nav ul {
     font-size: 16px;
     font-weight: bold;
     color: #000;
+}
+
+.antigo-preco2 {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 15px;
+}
+
+.desconto2 {
+    color: #007B7F;
+    font-weight: bold;
+    margin-left: 15px;
 }
 
 .estrelas3 {
@@ -411,6 +425,18 @@ nav ul {
     color: #000;
 }
 
+.antigo-preco3 {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 15px;
+}
+
+.desconto3 {
+    color: #007B7F;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
 .estrelas4 {
     color: #000000;
     font-size: 18px;
@@ -447,18 +473,6 @@ nav ul {
     color: #000;
 }
 
-.antigo-preco2 {
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 15px;
-}
-
-.desconto2 {
-    color: #007B7F;
-    font-weight: bold;
-    margin-left: 15px;
-}
-
 .estrelas5 {
     color: #000000;
     font-size: 18px;
@@ -493,18 +507,6 @@ nav ul {
     font-size: 16px;
     font-weight: bold;
     color: #000;
-}
-
-.antigo-preco3 {
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 15px;
-}
-
-.desconto3 {
-    color: #007B7F;
-    font-weight: bold;
-    margin-left: 15px;
 }
 
 .estrelas6 {

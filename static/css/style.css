@@ -13,6 +13,7 @@ header {
 }
 
 /* Menu */
+
 .ha {
     background-color: black;
     color: white;
@@ -32,6 +33,7 @@ header {
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: left;
+    background-color: white;
     padding: 10px;
     width: 50px;
     height: 30px;
@@ -113,7 +115,7 @@ nav ul {
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: center; /* Centraliza a imagem */
-    width: 1500px;
+    width: 1507px;
     height: 700px;
     margin-top: 30px;
 }
@@ -130,6 +132,7 @@ nav ul {
 }
 
 .c1 {
+  text-decoration: none;
     display: block;
     color: black;
     background-color: white;
@@ -138,6 +141,7 @@ nav ul {
     position: absolute;
     margin-top: 370px;
     border-radius: 20px;
+    min-width: 100px;
 }
 
 /* MAIN */
@@ -171,7 +175,7 @@ nav ul {
 .cht2 {
     background-image: url("/static/image/chu2.jpg");
     background-size: cover;
-    width: 750px;
+    width: 757px;
     height: 450px;
     margin-left: 750px;
     margin-top: -370px;
@@ -201,7 +205,7 @@ nav ul {
     margin-top: 100px;
 }
 
-.container {
+.container1 {
     display: flex;              /* coloca lado a lado */
     justify-content: center;    /* centraliza no meio da tela */
     align-items: center;        /* alinha verticalmente */
@@ -209,7 +213,7 @@ nav ul {
     margin-top: 30px;
 }
 
-.container img {
+.container1 img {
     height: 500px;              /* altura fixa */
     object-fit: contain;        /* garante que não deforme */
     background-size: cover;
@@ -280,3 +284,140 @@ nav ul {
     border-radius: 8px;   
     margin-right: 80px;          
 }
+
+.par {
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.container2 {
+    display: flex;              /* coloca lado a lado */
+    justify-content: center;    /* centraliza no meio da tela */
+    align-items: center;        /* alinha verticalmente */ 
+    margin-top: -40px; 
+    margin-right: 100px;                /* espaço entre as imagens */
+}
+
+.container2 img {
+    width: 280px;
+    height: 500px;              /* altura fixa */
+    object-fit: contain;        /* garante que não deforme */
+}
+
+.textma {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    display: flex;
+    gap: 320px;
+    text-align: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+    footer {
+        width: 1465px;
+      background-color: #111;
+      color: #fff;
+      padding: 40px 20px;
+      margin-top: 80px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-marca {
+      flex: 1 1 200px;
+      max-width: 250px;
+    }
+
+    .footer-marca h2 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .footer-cbc {
+      flex: 1 1 200px;
+      margin-left: 180px;
+    }
+
+    .footer-cbc h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .footer-cbc ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-cbc ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-cbc ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-cbc ul li a:hover {
+      color: #ffffff;
+    }
+
+    .footer-icons {
+      flex: 1 1 200px;
+    }
+
+    .footer-icons h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .footer-icons i {
+      margin-right: 15px;
+      font-size: 20px;
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-icons i:hover {
+      color: #ffffff;
+    }
+
+    .footer-contato {
+        flex: 1 1 200px;
+    }
+
+    .footer-contato h2 {
+        color: #bbb;
+        font-size: 15px;
+        margin-top: -18px;
+        margin-left: 28px;
+    }
+ 
+    .footer-contato i {
+        color: #bbb;
+        display: flex;
+    }
+
+    .footer-final {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #333;
+      padding-top: 15px;
+    }

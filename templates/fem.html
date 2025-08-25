@@ -10,15 +10,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-            <div class="ha">
+      <header>
+        <div class="ha">
             <h5>Acessibilidade  |  Guia de produtos  |  Acompanhe seu pedido  |  Ajuda  |  Junte-se a nós</h5>
         </div>
 
         <div class="hb">
-            <a href="masc.html" class="btn">Masculino</a>
-            <a href="fem.html" class="btn">Feminino</a>
-            <a href="lanc.html" class="btn">Lançamento</a>
-            <a href="prom.html" class="btn">Promoção</a>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('masc') }}" class="btn">Masculino</a></li>
+                    <li><a href="{{ url_for('fem') }}" class="btn">Feminino</a></li>
+                    <li><a href="{{ url_for('lanc') }}" class="btn">Lançamento</a></li>
+                    <li><a href="{{ url_for('prom') }}" class="btn">Promoção</a></li>
+                </ul>
+            </nav>
             <div class="buscar">
                 <input type="text" placeholder="Buscar">
                 <div class="perfil">
@@ -30,6 +35,207 @@
         <div class="hc">
             <h4>DIVERSAS opções PARA VOCÊ!</h4>
         </div>
+
+      </header>
+
+      <div class="Produtos">
+        <h5>Página Inicial / Feminino</h5>
+        <h1>Produtos FEMININO</h1>
+    </div>
+
+    <div class="filtro">
+
+    <div class="linha"></div>
+
+    <div class="tam">
+        <h4>Tamanho</h4>
+    </div>
+
+    <div class="linha1"></div>
+
+    <div class="tamanhos">
+        <button>34</button>
+        <button>34,5</button>
+        <button>35</button>
+        <button>35,5</button>
+        <button>36</button>
+        <button>36,5</button>
+        <button>37</button>
+        <button>37,5</button>
+        <button>38</button>
+        <button>38,5</button>
+        <button>39</button>
+        <button>39,5</button>
+        <button>40</button>
+        <button>40,5</button>
+        <button>41</button>
+        <button>42</button>
+        <button>43</button>
+        <button>44</button>
+        <button>45</button>
+        <button>46</button>
+    </div>
+
+    <div class="linha2"></div>
+
+    <div class="pre">
+        <h4>Preço</h4>
+    </div>
+
+    <div class="linha3"></div>
+
+    <div class="filtros-preco">
+        <label>
+            <input type="checkbox"> R$ 100 - R$ 200
+        </label>
+        <label>
+            <input type="checkbox"> R$ 200 - R$ 300
+        </label>
+        <label>
+            <input type="checkbox"> R$ 300 - R$ 400
+        </label>
+        <label>
+            <input type="checkbox"> R$ 400 - R$ 500
+        </label>
+        <label>
+            <input type="checkbox"> Acima de R$ 500
+        </label>
+
+    </div>
+
+    <div class="linha4"></div>
+
+    </div>
+
+    <div class="container1">
+        <img src="static/image/adidasA.jpeg" alt="Imagem 1">
+        <img src="static/image/adidasL.jpeg" alt="Imagem 2">
+        <img src="static/image/mormaiiD.jpeg" alt="Imagem 3">
+    </div>
+
+    <div class="fch1">
+        <h2>Tênis Adidas Campus 00s Feminino</h2>
+        <p>Casual</p>
+        <p>
+            <span class="preco1">R$ 799,99 À vista</span>
+        </p>
+        <p>
+            <span class="estrelas6">★★★★☆</span>
+            <span class="nota3">4.8</span>
+        </p>
+    </div>
+
+    <div class="fch2">
+        <h2>Tênis de Corrida Adistar Unisex</h2>
+        <p>Esportivo</p>
+        <p>
+            <span class="preco2">R$ 764,99 À vista</span>
+            <span class="antigo-preco1">R$ 899,99</span>
+            <span class="desconto1">15% off</span>
+        </p>
+        <p>
+            <span class="estrelas4">★★★★☆</span>
+            <span class="nota4">4.9</span>
+        </p>
+    </div>
+
+        <div class="fch3">
+        <h2>Tênis Mormaii Urban Branco Feminino</h2>
+        <p>Casual</p>
+        <p>
+            <span class="preco3">R$ 183,99 À vista</span>
+            <span class="antigo-preco2">R$ 199,99</span>
+            <span class="desconto2">8% off</span>
+        </p>
+        <p>
+            <span class="estrelas5">★★★★☆</span>
+            <span class="nota5">3.7</span>
+        </p>
+    </div>
+
+    <div class="container2">
+        <img src="static/image/adidasO.jpeg" alt="Imagem 1">
+        <img src="static/image/mormaiiB.jpeg" alt="Imagem 2">
+        <img src="static/image/adidasC.jpeg" alt="Imagem 3">
+    </div>
+
+        <div class="fch4">
+        <h2>Tênis Adidas Superstar II Unissex</h2>
+        <p>Casual</p>
+        <p>
+            <span class="preco4">R$ 799,99 À vista</span>
+        </p>
+        <p>
+            <span class="estrelas5">★★★★☆</span>
+            <span class="nota5">4.5</span>
+        </p>
+    </div>
+
+    <div class="fch5">
+        <h2>Tênis Mormaii Urban Branco Breeze Feminino</h2>
+        <p>Casual</p>
+        <p>
+            <span class="preco5">R$ 199,99 À vista</span>
+        </p>
+        <p>
+            <span class="estrelas3">★★★★☆</span>
+            <span class="nota3">4.9</span>
+        </p>
+    </div>
+
+        <div class="fch6">
+        <h2>Tênis Adi Racer Lo Feminino</h2>
+        <p>Esportivo</p>
+        <p>
+            <span class="preco6">R$ 615,99 À vista</span>
+            <span class="antigo-preco3">R$ 699,99</span>
+            <span class="desconto3">12% off</span>
+        </p>
+        <p>
+            <span class="estrelas2">★★★☆☆</span>
+            <span class="nota2">3.6</span>
+        </p>
+    </div>
+
+    <div class="linha6"></div>
+
+    <div class="linha5"></div>
+
+    <footer>
+    <div class="footer-container">
+      <div class="footer-marca">
+        <h2>StepUp</h2>
+        <p>Revendedor oficial de tênis originais. Dê o próximo passo com estilo!</p>
+      </div>
+
+      <div class="footer-cbc">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Acessibilidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-icons">
+        <h3>Siga-nos</h3>
+        <i class="fab fa-facebook-f"> </i>
+        <i class="fab fa-instagram"> </i>
+        <i class="fab fa-twitter"> </i>
+        <i class="fab fa-youtube-square"> </i>
+      </div>
+      <div class="footer-contato">
+        <h3>Contato</h3>
+        <i class="	fab fa-whatsapp"> </i>
+        <h2>(87) 9 8133-1430</h2>
+      </div>
+    </div>
+
+    <div class="footer-final">
+      &copy; 2025 StepUp - Todos os direitos reservados.
+    </div>
+  </footer>
     
 </body>
     

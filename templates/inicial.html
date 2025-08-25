@@ -42,7 +42,7 @@
              QUE ACOMPANHA SEU RITMO!</h1>
         </div>
         <div class="c1">
-            <h3>COMPRE AGORA <i class="	fas fa-arrow-right"> </i></h3>
+            <h3><a href="{{ url_for('esp') }}" class="btn">COMPRE AGORA <i class="	fas fa-arrow-right"> </i></a></h3>
         </div>
         <div class="image">
         </div>
@@ -71,7 +71,7 @@
             <h1>CATEGORIA</h1>
         </div>
 
-        <div class="container">
+        <div class="container1">
             <img src="static/image/men.avif" alt="Imagem 1">
             <img src="static/image/women.avif" alt="Imagem 2">
             <img src="static/image/esportivo.avif" alt="Imagem 3">
@@ -83,7 +83,61 @@
             <h4><a href="{{ url_for('esp') }}" class="btn">Esportivo</a></h4>
         </div>
 
+        <div class="par">
+            <h1>PARCERIA</h1>
+        </div>
+
+        <div class="container2">
+            <h4><a href="{{ url_for('nike') }}" class="btn"><img src="static/image/Nike.png" alt="Imagem 1"></a></h4>
+            <h4><a href="{{ url_for('mormaii') }}" class="btn"><img src="static/image/Mormaii.png" alt="Imagem 2"></a></h4>
+            <h4><a href="{{ url_for('puma') }}" class="btn"><img src="static/image/Puma.png" alt="Imagem 3"></a></h4>
+            <h4><a href="{{ url_for('adidas') }}" class="btn"><img src="static/image/Adidas.png" alt="Imagem 4"></a></h4>
+        </div>
+
+        <div class="textma">
+            <p>Nike</p>
+            <p>Mormaii</p>
+            <p>Puma</p>
+            <p>Adidas</p>
+        </div>
+
         </main>
+
+    <footer>
+    <div class="footer-container">
+      <div class="footer-marca">
+        <h2>StepUp</h2>
+        <p>Revendedor oficial de tênis originais. Dê o próximo passo com estilo!</p>
+      </div>
+
+      <div class="footer-cbc">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Acessibilidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-icons">
+        <h3>Siga-nos</h3>
+        <i class="fab fa-facebook-f"> </i>
+        <i class="fab fa-instagram"> </i>
+        <i class="fab fa-twitter"> </i>
+        <i class="fab fa-youtube-square"> </i>
+      </div>
+      <div class="footer-contato">
+        <h3>Contato</h3>
+        <i class="	fab fa-whatsapp"> </i>
+        <h2>(87) 9 8133-1430</h2>
+      </div>
+    </div>
+
+    <div class="footer-final">
+      &copy; 2025 StepUp - Todos os direitos reservados.
+    </div>
+  </footer>
     
 </body>
 </html>
