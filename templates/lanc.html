@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-     <header>
+         <header>
         <div class="ha">
             <h5>Acessibilidade  |  Guia de produtos  |  Acompanhe seu pedido  |  Ajuda  |  Junte-se a nós</h5>
         </div>
@@ -26,17 +26,24 @@
             </nav>
             <div class="buscar">
                 <input type="text" placeholder="Buscar">
-                <div class="perfil">
-                    <i class="fas fa-user-alt"> </i> <i class="fas fa-heart"> </i> <i class="	fa fa-shopping-bag"> </i>
-                </div>
+            <div class="icones">
+                <a href="{{ url_for('cadastro') }}" class="icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="{{ url_for('favoritos') }}" class="icon">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="{{ url_for('bolsa') }}" class="icon">
+                    <i class="fa fa-shopping-bag"></i>
+                </a>
+            </div>
             </div>
         </div>
 
         <div class="hc">
             <h4>DIVERSAS opções PARA VOCÊ!</h4>
         </div>
-    
-     </header>
+    </header>
 
      <div class="Produtos">
         <h5>Página Inicial / Lançamento</h5>

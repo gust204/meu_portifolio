@@ -99,10 +99,18 @@ nav ul {
 }
 
 /* Ícones do Menu*/
-.perfil {
-    margin-left: 28px;
-    white-space: nowrap;
-    word-spacing: 10px;
+.icones {
+  display: flex;            /* coloca os ícones lado a lado */
+  gap: 12px;                /* espaço entre eles */
+  align-items: center;      /* alinha verticalmente */
+  margin-left: 10px;
+}
+
+.icones .icon {
+  text-decoration: none;    /* remove sublinhado */
+  color: black;             /* cor do ícone */
+  font-size: 18px;          /* tamanho do ícone */
+  transition: 0.3s;
 }
 
 /* Fim do Menu */

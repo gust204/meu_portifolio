@@ -1,6 +1,18 @@
 from flask import Flask, render_template
+import sqlite3
+from pathlib import Path
 
 app = Flask(__name__)
+
+app.secret_key = "dev"
+
+DB_PATH = (Path(__file__).parent / "database.db").resolve()
+
+def get_db_connection():
+    conn = sqlite3.connect(DB_PATH)  
+    conn.row_factory = sqlite3.Row   
+    return conn
+
 
 @app.route("/")
 def home():
@@ -41,6 +53,18 @@ def puma():
 @app.route("/mormaii")
 def mormaii():
     return render_template("mormaii.html")
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template("cadastro.html")
+
+@app.route("/favoritos")
+def favoritos():
+    return render_template("favoritos.html")
+
+@app.route("/bolsa")
+def bolsa():
+    return render_template("bolsa.html")
 
 
 if __name__ == "__main__":

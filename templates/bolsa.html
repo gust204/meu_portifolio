@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/styleBO.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="ha">
+            <h5>Acessibilidade  |  Guia de produtos  |  Acompanhe seu pedido  |  Ajuda  |  Junte-se a nós</h5>
+        </div>
+
+        <div class="hb">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('masc') }}" class="btn">Masculino</a></li>
+                    <li><a href="{{ url_for('fem') }}" class="btn">Feminino</a></li>
+                    <li><a href="{{ url_for('lanc') }}" class="btn">Lançamento</a></li>
+                    <li><a href="{{ url_for('prom') }}" class="btn">Promoção</a></li>
+                </ul>
+            </nav>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar">
+            <div class="icones">
+                <a href="{{ url_for('cadastro') }}" class="icon">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="{{ url_for('favoritos') }}" class="icon">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="{{ url_for('bolsa') }}" class="icon">
+                    <i class="fa fa-shopping-bag"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <div class="hc">
+            <h4>DIVERSAS opções PARA VOCÊ!</h4>
+        </div>
+    </header>
+    
+</body>
+</html>

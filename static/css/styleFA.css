@@ -1,0 +1,124 @@
+body {
+    width: 1500px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Helvetica Neue';
+}
+
+header {
+    height: 158px;
+    justify-content: space-between;
+}
+
+/* Menu */
+
+.ha {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 1475px;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hb {
+    background-image: url("/static/image/logo.png");
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: left;
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    gap: 10px;
+}
+
+nav ul {
+  list-style: none;           /* remove os bullets da lista */
+  display: flex;              /* transforma os <li> em linha */
+  gap: 5px;                  /* espaçamento entre os links */
+  align-items: center;
+  justify-content: center;
+  margin-left: 260px;
+}
+
+.btn {
+    display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  margin-left: 100px;
+}
+
+.cag {
+    margin-right: 90px;
+}
+
+.hc {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    width: 1475px;
+    height: 25px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    line-height: normal;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Barra de pesquisa */
+.buscar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: flex-start;
+    float: left;
+    text-align: left;
+    margin-left: 100px;
+    gap: -30px;
+}
+
+.buscar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background-color: #dcdcdc;
+}
+
+/* Ícones do Menu*/
+.icones {
+  display: flex;            /* coloca os ícones lado a lado */
+  gap: 12px;                /* espaço entre eles */
+  align-items: center;      /* alinha verticalmente */
+  margin-left: 10px;
+}
+
+.icones .icon {
+  text-decoration: none;    /* remove sublinhado */
+  color: black;             /* cor do ícone */
+  font-size: 18px;          /* tamanho do ícone */
+  transition: 0.3s;
+}
+
+/* Fim do Menu */
