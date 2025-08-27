@@ -667,3 +667,8 @@ nav ul {
       border-top: 1px solid #333;
       padding-top: 15px;
     }
+
+        @media (max-width: 1800px){
+  .topbar__inner{ min-height: 56px; }
+  .page-title{ font-size: 22px; }
+}
