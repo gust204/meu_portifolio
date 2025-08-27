@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuários Cadastrados</title>
+</head>
+<body>
+  <h1>Usuários Cadastrados</h1>
+  <ul>
+    {% for usuario in usuarios %}
+      <li>{{ usuario["nome"] }} - {{ usuario["email"] }}</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ url_for('cadastro') }}">Cadastrar novo usuário</a>
+</body>
+</html>

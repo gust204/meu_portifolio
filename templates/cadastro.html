@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+<div class="voltar">
+  <a href="{{ url_for('home') }}" class="btn"><i class="fas fa-arrow-left"> </i></a>
+</div>
 <div class="container">
     <!-- Login -->
     <div class="col">
@@ -22,8 +25,7 @@
         <label for="login-pass">Senha *</label>
         <input type="password" id="login-pass" placeholder="Digite sua senha" required>
 
-        <button type="submit">Entrar</button>
-        <p><a href="#">Esqueceu sua senha?</a></p>
+        <a href="{{ url_for('home') }}" class="btn"><button type="submit">Entrar</button></a>
       </form>
     </div>
 
@@ -33,16 +35,16 @@
       <p>Cadastre-se e aproveite benefícios exclusivos.</p>
       <form>
         <label for="nome">Nome *</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
 
         <label for="sobrenome">Sobrenome *</label>
-        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" required>
+        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
 
         <label for="cadastro-email">E-mail *</label>
-        <input type="email" id="cadastro-email" placeholder="Digite seu e-mail" required>
+        <input type="email" name="email" placeholder="Digite seu email" required>
 
         <label for="cadastro-pass">Senha *</label>
-        <input type="password" id="cadastro-pass" placeholder="Mínimo de 6 caracteres" required>
+        <input type="password" id="senha" placeholder="Mínimo de 6 caracteres" required>
 
         <div class="checkbox">
           <input type="checkbox" id="news">
@@ -51,7 +53,8 @@
             <label for="news">Ao se cadastrar no StepUp você aceita nossos Termos e Condições de Uso e nossa Política de Privacidade</label>
         </div>
 
-        <button type="submit">Criar conta</button>
+
+        <a href="{{ url_for('home') }}" class="btn"><button type="submit">Criar conta</button></a>
       </form>
     </div>
   </div>

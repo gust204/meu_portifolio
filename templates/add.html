@@ -1,0 +1,74 @@
+{% extends "cadastro.html" %}
+
+{% block title %}Cadastro de Usuário{% endblock %}
+
+{% block content %}
+
+<h1 class="page-title">Cadastro</h1>
+
+<div class="card">
+
+  <form method="post" action="{{ url_for('cadastro') }}" class="form">
+    
+    <div class="form__row">
+      <label class="form__label">
+        Nome
+        <input
+          class="form__input"
+          type="text"
+          name="nome"
+          placeholder="Digite seu nome"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="form__row">
+      <label class="form__label">
+        Sobrenome
+        <input
+          class="form__input"
+          type="text"
+          name="sobrenome"
+          placeholder="Digite seu sobrenome"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="form__row">
+      <label class="form__label">
+        Email
+        <input
+          class="form__input"
+          type="email"
+          name="email"
+          placeholder="Digite seu email"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="form__row">
+      <label class="form__label">
+        Senha
+        <input
+          class="form__input"
+          type="password"
+          name="senha"
+          placeholder="Mínimo de 6 caracteres"
+          required
+        />
+      </label>
+    </div>
+
+    <div class="form__actions">
+      <button class="btn btn--primary" type="submit">Cadastrar</button>
+ 
+      <a class="btn" href="{{ url_for('home') }}">Voltar</a>
+   
+    </div>
+  </form>
+</div>
+
+{% endblock %}

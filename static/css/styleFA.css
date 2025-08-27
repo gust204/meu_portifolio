@@ -122,3 +122,19 @@ nav ul {
 }
 
 /* Fim do Menu */
+
+.icons {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    font-size: 150px;
+    margin-top: 140px;
+}
+
+.fav {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

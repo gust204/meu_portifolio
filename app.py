@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for, flash
 import sqlite3
 from pathlib import Path
 
@@ -8,10 +8,28 @@ app.secret_key = "dev"
 
 DB_PATH = (Path(__file__).parent / "database.db").resolve()
 
+DATABASE = "database.db"
+
 def get_db_connection():
-    conn = sqlite3.connect(DB_PATH)  
-    conn.row_factory = sqlite3.Row   
+    conn = sqlite3.connect(DATABASE)
+    conn.row_factory = sqlite3.Row
     return conn
+
+def init_db():
+    if not DB_PATH.exists():
+        print("[INIT_DB] Criando novo banco...")
+        with get_db_connection() as conn:
+            conn.executescript("""
+                CREATE TABLE usuarios (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    nome TEXT NOT NULL,
+                    sobrenome TEXT NOT NULL,
+                    email TEXT UNIQUE NOT NULL,
+                    senha TEXT NOT NULL
+                );
+            """)
+            conn.commit()
+        print("[INIT_DB] Banco criado em:", DB_PATH)
 
 
 @app.route("/")
@@ -54,9 +72,24 @@ def puma():
 def mormaii():
     return render_template("mormaii.html")
 
-@app.route("/cadastro")
+@app.route("/add", methods=["GET", "POST"])
 def cadastro():
-    return render_template("cadastro.html")
+    if request.method == "POST":
+        nome = request.form["nome"]
+        sobrenome = request.form["sobrenome"]
+        email = request.form["email"]
+        senha = request.form["senha"]
+
+        conn = get_db_connection()
+        conn.execute(
+            "INSERT INTO usuarios (nome, sobrenome, email, senha) VALUES (?, ?, ?)",
+            (nome, sobrenome, email, senha),
+        )
+        conn.commit()
+        conn.close()
+        return "Usuário cadastrado com sucesso!"
+    
+    return render_template("add.html")
 
 @app.route("/favoritos")
 def favoritos():
@@ -66,6 +99,16 @@ def favoritos():
 def bolsa():
     return render_template("bolsa.html")
 
+@app.route("/add")
+def add():
+    return render_template("add.html")
+
+@app.route("/usuarios")
+def listar_usuarios():
+    db = get_db_connection()
+    usuarios = db.execute("SELECT * FROM usuarios").fetchall()
+    return render_template("usuarios.html", usuarios=usuarios)
 
 if __name__ == "__main__":
+    init_db()
     app.run(debug=True)

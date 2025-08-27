@@ -6,6 +6,12 @@ body {
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    .voltar {
+      font-size: 22px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
     .container {
       max-width: 1100px;
       margin: 40px auto;
@@ -81,3 +87,8 @@ body {
     margin-left: 765px;
     margin-top: -520px;
     }
+
+    @media (max-width: 1800px){
+  .topbar__inner{ min-height: 56px; }
+  .page-title{ font-size: 22px; }
+}
