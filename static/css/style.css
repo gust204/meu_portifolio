@@ -29,9 +29,6 @@ header {
 }
 
 .hb {
-    background-image: url("/static/image/logo.png");
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: left;
     background-color: white;
     padding: 10px;
@@ -69,6 +66,33 @@ nav ul {
 
 .cag {
     margin-right: 90px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+}
+
+.logo {
+  display: inline-flex;           /* aumenta a área clicável */
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;          /* tira sublinhado */
+  color: inherit;                 /* usa a cor do tema */
+  cursor: pointer;                /* mãozinha */
+}
+
+.logo img {
+  margin-right: 30px;
+  height: 40px;                   /* ajuste o tamanho da sua logo */
+  width: auto;
+  display: block;
+}
+
+.logo:hover {                     /* feedback de hover */
+  opacity: .85;
 }
 
 .hc {

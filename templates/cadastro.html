@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro / Login</title>
 
-    <link rel="stylesheet" href="{{url_for ('static', filename='css/styleCA.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styleCA.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 <div class="voltar">
-  <a href="{{ url_for('home') }}" class="btn"><i class="fas fa-arrow-left"> </i></a>
+  <a href="{{ url_for('home') }}" class="btn"><i class="fas fa-arrow-left"></i></a>
 </div>
+
 <div class="container">
     <!-- Login -->
     <div class="col">
       <h2>Já tenho conta</h2>
       <p>Entre com seu e-mail e senha.</p>
-      <form>
+      <form method="POST" action="{{ url_for('login') }}">
         <label for="login-email">E-mail *</label>
-        <input type="email" id="login-email" placeholder="Digite seu e-mail" required>
+        <input type="email" name="email" id="login-email" placeholder="Digite seu e-mail" required>
 
         <label for="login-pass">Senha *</label>
-        <input type="password" id="login-pass" placeholder="Digite sua senha" required>
+        <input type="password" name="senha" id="login-pass" placeholder="Digite sua senha" required>
 
-        <a href="{{ url_for('home') }}" class="btn"><button type="submit">Entrar</button></a>
+        <button type="submit" class="btn">Entrar</button>
       </form>
     </div>
 
@@ -33,18 +34,18 @@
     <div class="col">
       <h2>Criar uma conta</h2>
       <p>Cadastre-se e aproveite benefícios exclusivos.</p>
-      <form>
+      <form method="POST" action="{{ url_for('cadastro') }}">
         <label for="nome">Nome *</label>
-        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
 
         <label for="sobrenome">Sobrenome *</label>
-        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
 
         <label for="cadastro-email">E-mail *</label>
-        <input type="email" name="email" placeholder="Digite seu email" required>
+        <input type="email" name="email" id="cadastro-email" placeholder="Digite seu email" required>
 
         <label for="cadastro-pass">Senha *</label>
-        <input type="password" id="senha" placeholder="Mínimo de 6 caracteres" required>
+        <input type="password" name="senha" id="cadastro-pass" placeholder="Mínimo de 6 caracteres" required>
 
         <div class="checkbox">
           <input type="checkbox" id="news">
@@ -53,13 +54,11 @@
             <label for="news">Ao se cadastrar no StepUp você aceita nossos Termos e Condições de Uso e nossa Política de Privacidade</label>
         </div>
 
-
-        <a href="{{ url_for('home') }}" class="btn"><button type="submit">Criar conta</button></a>
+        <button type="submit" class="btn">Criar conta</button>
       </form>
     </div>
-  </div>
+</div>
 
-  <div class="linha"> </div>
-    
+<div class="linha"></div>
 </body>
 </html>

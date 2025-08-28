@@ -3,15 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Usuários Cadastrados</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+    th { background: #f2f2f2; }
+  </style>
 </head>
 <body>
-  <h1>Usuários Cadastrados</h1>
-  <ul>
-    {% for usuario in usuarios %}
-      <li>{{ usuario["nome"] }} - {{ usuario["email"] }}</li>
-    {% endfor %}
-  </ul>
+  <h1>Lista de Usuários</h1>
 
-  <a href="{{ url_for('cadastro') }}">Cadastrar novo usuário</a>
+  {% if usuarios %}
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+      </tr>
+      {% for user in usuarios %}
+      <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.nome }}</td>
+        <td>{{ user.sobrenome }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>Nenhum usuário cadastrado ainda.</p>
+  {% endif %}
+
+  <p style="margin-top:20px;">
+    <a href="{{ url_for('cadastro') }}">Cadastrar novo usuário</a>
+  </p>
 </body>
 </html>

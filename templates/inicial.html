@@ -17,6 +17,10 @@
         </div>
 
         <div class="hb">
+            <header class="site-header">
+  <a href="{{ url_for('home') }}" class="logo" aria-label="Ir para a página inicial">
+    <img src="{{ url_for('static', filename='image/logo.png') }}" alt="StepUp" />
+  </a>
             <nav>
                 <ul>
                     <li><a href="{{ url_for('masc') }}" class="btn">Masculino</a></li>
