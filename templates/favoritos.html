@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="{{url_for ('static', filename='css/styleFA.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 </head>
 <body>
     <header>
-        <div class="ha">
+         <div class="ha">
             <h5>Acessibilidade  |  Guia de produtos  |  Acompanhe seu pedido  |  Ajuda  |  Junte-se a nós</h5>
         </div>
 
         <div class="hb">
+            <header class="site-header">
+  <a href="{{ url_for('home') }}" class="logo" aria-label="Ir para a página inicial">
+    <img src="{{ url_for('static', filename='image/logo.png') }}" alt="StepUp" />
+  </a>
             <nav>
                 <ul>
                     <li><a href="{{ url_for('masc') }}" class="btn">Masculino</a></li>
@@ -27,13 +32,13 @@
             <div class="buscar">
                 <input type="text" placeholder="Buscar">
             <div class="icones">
-                <a href="{{ url_for('cadastro') }}" class="icon">
+                <a href="{{ url_for('cadastro') }}" class="btn2" class="icon">
                     <i class="fas fa-user"></i>
                 </a>
-                <a href="{{ url_for('favoritos') }}" class="icon">
+                <a href="{{ url_for('favoritos') }}" class="btn2" class="icon">
                     <i class="fas fa-heart"></i>
                 </a>
-                <a href="{{ url_for('bolsa') }}" class="icon">
+                <a href="{{ url_for('bolsa') }}" class="btn2" class="icon">
                     <i class="fa fa-shopping-bag"></i>
                 </a>
             </div>

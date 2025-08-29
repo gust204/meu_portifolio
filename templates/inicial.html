@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{url_for ('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 
 </head>
 <body>
@@ -32,13 +33,13 @@
             <div class="buscar">
                 <input type="text" placeholder="Buscar">
             <div class="icones">
-                <a href="{{ url_for('cadastro') }}" class="icon">
+                <a href="{{ url_for('cadastro') }}" class="btn2" class="icon">
                     <i class="fas fa-user"></i>
                 </a>
-                <a href="{{ url_for('favoritos') }}" class="icon">
+                <a href="{{ url_for('favoritos') }}" class="btn2" class="icon">
                     <i class="fas fa-heart"></i>
                 </a>
-                <a href="{{ url_for('bolsa') }}" class="icon">
+                <a href="{{ url_for('bolsa') }}" class="btn2" class="icon">
                     <i class="fa fa-shopping-bag"></i>
                 </a>
             </div>

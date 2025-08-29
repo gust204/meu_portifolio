@@ -49,7 +49,7 @@ nav ul {
   gap: 5px;                  /* espaçamento entre os links */
   align-items: center;
   justify-content: center;
-  margin-left: 260px;
+  margin-left: 160px;
 }
 
 .btn {
@@ -61,7 +61,21 @@ nav ul {
   justify-content: center;
   text-align: center;
   line-height: normal;
-  margin-left: 100px;
+  margin-left: 80px;
+  transition: background-color 0.3s ease; /* efeito suave */
+}
+
+.btn:hover {
+  background-color: #bbb;
+}
+
+.btn2 {
+  color: #111;
+  transition: background-color 0.3s ease; /* efeito suave */
+}
+
+.btn2:hover {
+  background-color: #bbb;
 }
 
 .cag {
@@ -73,26 +87,21 @@ nav ul {
   align-items: center;
   gap: 16px;
   padding: 12px 20px;
+  margin-right: 100px;
 }
 
 .logo {
-  display: inline-flex;           /* aumenta a área clicável */
-  align-items: center;
   gap: 8px;
-  text-decoration: none;          /* tira sublinhado */
-  color: inherit;                 /* usa a cor do tema */
-  cursor: pointer;                /* mãozinha */
 }
 
 .logo img {
-  margin-right: 30px;
-  height: 40px;                   /* ajuste o tamanho da sua logo */
+  margin-right: 50px;
+  height: 50px;                   /* ajuste o tamanho da sua logo */
   width: auto;
-  display: block;
 }
 
 .logo:hover {                     /* feedback de hover */
-  opacity: .85;
+  opacity: 1.00;
 }
 
 .hc {
@@ -112,13 +121,12 @@ nav ul {
 /* Barra de pesquisa */
 .buscar {
     display: flex;
-    align-items: center;
     width: 200px;
     justify-content: flex-start;
     float: left;
     text-align: left;
-    margin-left: 100px;
     gap: -30px;
+    margin-left: 160px;
 }
 
 .buscar input {

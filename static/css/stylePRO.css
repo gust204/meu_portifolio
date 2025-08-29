@@ -13,6 +13,7 @@ header {
 }
 
 /* Menu */
+
 .ha {
     background-color: black;
     color: white;
@@ -28,10 +29,8 @@ header {
 }
 
 .hb {
-    background-image: url("/static/image/logo.png");
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-position: left;
+    background-color: white;
     padding: 10px;
     width: 50px;
     height: 30px;
@@ -50,10 +49,11 @@ nav ul {
   gap: 5px;                  /* espaçamento entre os links */
   align-items: center;
   justify-content: center;
-  margin-left: 260px;
+  margin-left: 160px;
 }
 
 .btn {
+    display: inline-block;
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -61,7 +61,47 @@ nav ul {
   justify-content: center;
   text-align: center;
   line-height: normal;
-  margin-left: 100px;
+  margin-left: 80px;
+  transition: background-color 0.3s ease; /* efeito suave */
+}
+
+.btn:hover {
+  background-color: #bbb;
+}
+
+.btn2 {
+  color: #111;
+  transition: background-color 0.3s ease; /* efeito suave */
+}
+
+.btn2:hover {
+  background-color: #bbb;
+}
+
+.cag {
+    margin-right: 90px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  margin-right: 100px;
+}
+
+.logo {
+  gap: 8px;
+}
+
+.logo img {
+  margin-right: 50px;
+  height: 50px;                   /* ajuste o tamanho da sua logo */
+  width: auto;
+}
+
+.logo:hover {                     /* feedback de hover */
+  opacity: 1.00;
 }
 
 .hc {
@@ -81,12 +121,12 @@ nav ul {
 /* Barra de pesquisa */
 .buscar {
     display: flex;
-    align-items: center;
     width: 200px;
     justify-content: flex-start;
     float: left;
     text-align: left;
-    margin-left: 100px;
+    gap: -30px;
+    margin-left: 160px;
 }
 
 .buscar input {
