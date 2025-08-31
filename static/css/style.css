@@ -7,6 +7,11 @@ body {
     font-family: 'Helvetica Neue';
 }
 
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+
 header {
     height: 158px;
     justify-content: space-between;
