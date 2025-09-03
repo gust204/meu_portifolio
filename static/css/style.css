@@ -7,11 +7,6 @@ body {
     font-family: 'Helvetica Neue';
 }
 
-.page-wrapper {
-  width: 100%;
-  height: auto;
-}
-
 header {
     height: 158px;
     justify-content: space-between;
@@ -49,9 +44,9 @@ header {
 }
 
 nav ul {
-  list-style: none;           /* remove os bullets da lista */
-  display: flex;              /* transforma os <li> em linha */
-  gap: 5px;                  /* espaçamento entre os links */
+  list-style: none;           
+  display: flex;             
+  gap: 5px;                 
   align-items: center;
   justify-content: center;
   margin-left: 160px;
@@ -67,7 +62,7 @@ nav ul {
   text-align: center;
   line-height: normal;
   margin-left: 80px;
-  transition: background-color 0.3s ease; /* efeito suave */
+  transition: background-color 0.3s ease; 
 }
 
 .btn:hover {
@@ -76,7 +71,7 @@ nav ul {
 
 .btn2 {
   color: #111;
-  transition: background-color 0.3s ease; /* efeito suave */
+  transition: background-color 0.3s ease; 
 }
 
 .btn2:hover {
@@ -101,11 +96,11 @@ nav ul {
 
 .logo img {
   margin-right: 50px;
-  height: 50px;                   /* ajuste o tamanho da sua logo */
+  height: 50px;                   
   width: auto;
 }
 
-.logo:hover {                     /* feedback de hover */
+.logo:hover {                     
   opacity: 1.00;
 }
 
@@ -145,27 +140,27 @@ nav ul {
 
 /* Ícones do Menu*/
 .icones {
-  display: flex;            /* coloca os ícones lado a lado */
-  gap: 12px;                /* espaço entre eles */
-  align-items: center;      /* alinha verticalmente */
+  display: flex;            
+  gap: 12px;                
+  align-items: center;      
   margin-left: 10px;
 }
 
 .icones .icon {
-  text-decoration: none;    /* remove sublinhado */
-  color: black;             /* cor do ícone */
-  font-size: 18px;          /* tamanho do ícone */
+  text-decoration: none;
+  color: black;             
+  font-size: 18px;          
   transition: 0.3s;
 }
 
 /* Fim do Menu */
 
-/* Imagem fundo */
+/* Imagem inicial */
 .image {
     background-image: url("/static/image/tenis.png");
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     width: 1507px;
     height: 700px;
     margin-top: 30px;
@@ -196,6 +191,8 @@ nav ul {
 }
 
 /* MAIN */
+
+/* ANUNCIO DE CHUTEIRAS */
 
 .fti {
     font-size: 22px;
@@ -257,16 +254,16 @@ nav ul {
 }
 
 .container1 {
-    display: flex;              /* coloca lado a lado */
-    justify-content: center;    /* centraliza no meio da tela */
-    align-items: center;        /* alinha verticalmente */
-    gap: 80px;                  /* espaço entre as imagens */
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    gap: 80px;                  
     margin-top: 30px;
 }
 
 .container1 img {
-    height: 500px;              /* altura fixa */
-    object-fit: contain;        /* garante que não deforme */
+    height: 500px;             
+    object-fit: contain;       
     background-size: cover;
 }
 
@@ -344,17 +341,17 @@ nav ul {
 }
 
 .container2 {
-    display: flex;              /* coloca lado a lado */
-    justify-content: center;    /* centraliza no meio da tela */
-    align-items: center;        /* alinha verticalmente */ 
+    display: flex;              
+    justify-content: center;   
+    align-items: center;        
     margin-top: -40px; 
-    margin-right: 100px;                /* espaço entre as imagens */
+    margin-right: 100px;                
 }
 
 .container2 img {
     width: 280px;
-    height: 500px;              /* altura fixa */
-    object-fit: contain;        /* garante que não deforme */
+    height: 500px;             
+    object-fit: contain;       
 }
 
 .textma {
